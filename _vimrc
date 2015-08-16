@@ -56,7 +56,7 @@ set mat=2                      " how many tenths of a second to blink
 set wildmenu                   " handle command line completion 
 set wildmode=longest:full,full
 
-syntax on                      " switch syntax highlighting on
+" syntax on                      " switch syntax highlighting on
 
 set encoding=utf8
 let base16colorspace=256       " Access colors present in 256 colorspace"
