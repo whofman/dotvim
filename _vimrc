@@ -53,14 +53,16 @@ set magic                      " Set magic on, for regex
 
 set showmatch                  " show matching braces
 set mat=2                      " how many tenths of a second to blink
+set wildmenu                   " handle command line completion 
+set wildmode=longest:full,full
 
-" syntax on                      " switch syntax highlighting on
+syntax on                      " switch syntax highlighting on
 
 set encoding=utf8
 let base16colorspace=256       " Access colors present in 256 colorspace"
 set t_Co=256                   " Explicitly tell vim that the terminal supports 256 colors"
 set background=dark
-" colorscheme delek
+colorscheme solarized
 
 " Allow powerline symbols to show up
 let g:airline_powerline_fonts = 1
@@ -120,6 +122,9 @@ nmap <silent> <leader>y :NERDTreeFind<cr>    " expand to path of file in current
 " map fuzzyfinder (CtrlP) plugin
 " nmap <silent> <leader>t :CtrlP<cr>
 nmap <silent> <leader>r :CtrlPBuffer<cr>
+
+nmap <F8> :TagbarToggle<cr>
+nnoremap <F5> :GundoToggle<cr>
 
 let g:ctrlp_map='<leader>t'
 let g:ctrlp_dotfiles=1

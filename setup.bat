@@ -30,6 +30,9 @@ git submodule add http://github.com/tpope/vim-commentary.git bundle/vim-commenta
 git submodule add http://github.com/tpope/vim-fugitive.git bundle/vim-fugitive
 git submodule add http://github.com/vim-scripts/supertab.git bundle/supertab
 git submodule add http://github.com/edkolev/tmuxline.vim.git bundle/tmuxline.vim
+git submodule add http://github.com/majutsushi/tagbar.git bundle/tagbar
+git submodule add http://github.com/sjl/gundo.vim.git bundle/gundo
+git submodule add http://github.com/altercation/vim-colors-solarized.git bundle/vim-colors-solarized
 git add .
 git commit -m "Install VIM bundles as a submodule"
 :eof
